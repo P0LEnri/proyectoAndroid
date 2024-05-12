@@ -19,7 +19,19 @@ public class SQLiteManager extends SQLiteOpenHelper
 
     private static final String DATABASE_NAME = "Proyecto";
     private static final int DATABASE_VERSION = 1;
+    // Nombre de la tabla
     private static final String TABLE_NAME = "Tareas";
+
+    // Nombres de las columnas
+    private static final String COLUMN_ID = "ID";
+    private static final String COLUMN_NOMBRE_CONTACTO = "NombreContacto";
+    private static final String COLUMN_DESCRIPCION = "Descripcion";
+    private static final String COLUMN_HORA = "Hora";
+    private static final String COLUMN_FECHA = "Fecha";
+    private static final String COLUMN_ESTADO = "Estado";
+    private static final String COLUMN_RECORDATORIO = "Recordatorio";
+    private static final String COLUMN_CATEGORIA = "Categoria";
+    private static final String COLUMN_NOTIFICACION = "Notificacion";
 
 
     @SuppressLint("SimpleDateFormat")
@@ -41,21 +53,34 @@ public class SQLiteManager extends SQLiteOpenHelper
     @Override
     public void onCreate(SQLiteDatabase sqLiteDatabase)
     {
-        StringBuilder sql;
-        sql = new StringBuilder()
+        // Creación de la sentencia SQL para la tabla
+        StringBuilder sql = new StringBuilder()
                 .append("CREATE TABLE ")
-                .append(TABLE_NAME) // Nombre de la tabla
+                .append(TABLE_NAME)  // Nombre de la tabla
                 .append("(")
-                .append("ID INTEGER PRIMARY KEY AUTOINCREMENT, ") // Clave primaria autoincrementable
-                .append("NombreContacto TEXT, ") // Nombre del contacto
-                .append("Descripcion TEXT, ") // Descripción de la tarea
-                .append("Hora TEXT, ") // Hora de la tarea, almacenada como texto
-                .append("Fecha TEXT, ") // Fecha de la tarea, almacenada como texto
-                .append("Estado TEXT, ") // Estado de la tarea
-                .append("Prioridad INTEGER, ") // Prioridad de la tarea, opcional
-                .append("Notificacion INTEGER)"); // Campo de notificación como entero (0 para no, 1 para sí)
+                .append(COLUMN_ID)
+                .append(" INTEGER PRIMARY KEY AUTOINCREMENT, ") // Clave primaria autoincrementable
+                .append(COLUMN_NOMBRE_CONTACTO)
+                .append(" TEXT, ") // Nombre del contacto
+                .append(COLUMN_DESCRIPCION)
+                .append(" TEXT, ") // Descripción de la tarea
+                .append(COLUMN_HORA)
+                .append(" TEXT, ") // Hora de la tarea
+                .append(COLUMN_FECHA)
+                .append(" TEXT, ") // Fecha de la tarea
+                .append(COLUMN_ESTADO)
+                .append(" TEXT, ") // Estado de la tarea (Pendiente, Realizado, Aplazado)
+                .append(COLUMN_RECORDATORIO)
+                .append(" TEXT, ") // Información del recordatorio
+                .append(COLUMN_CATEGORIA)
+                .append(" TEXT, ") // Categoría de la tarea (Personal, Trabajo, Familia, etc.)
+                .append(COLUMN_NOTIFICACION)
+                .append(" INTEGER)"); // Indicador de notificación (0 para no, 1 para sí)
 
+        // Ejecutar la sentencia SQL para crear la tabla
         sqLiteDatabase.execSQL(sql.toString());
+
+
 
     }
 
