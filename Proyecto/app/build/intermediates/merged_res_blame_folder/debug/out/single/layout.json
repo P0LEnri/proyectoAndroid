@@ -1,42 +1,50 @@
 [
     {
-        "merged": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\app_bar_main.xml",
-        "source": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\app_bar_main.xml"
+        "merged": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\fragment_slideshow.xml",
+        "source": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\fragment_slideshow.xml"
     },
     {
-        "merged": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\fragment_slideshow.xml",
-        "source": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\fragment_slideshow.xml"
+        "merged": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\activity_crear_tarea.xml",
+        "source": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\activity_crear_tarea.xml"
     },
     {
-        "merged": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\fragment_gallery.xml",
-        "source": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\fragment_gallery.xml"
+        "merged": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\content_main.xml",
+        "source": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\content_main.xml"
     },
     {
-        "merged": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\content_main.xml",
-        "source": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\content_main.xml"
+        "merged": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\activity_main.xml",
+        "source": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\activity_main.xml"
     },
     {
-        "merged": "com.example.proyecto.app-mergeDebugResources-43:/layout/item_categoria.xml",
-        "source": "com.example.proyecto.app-main-46:/layout/item_categoria.xml"
+        "merged": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\app_bar_main.xml",
+        "source": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\app_bar_main.xml"
     },
     {
-        "merged": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\fragment_modificar_categoria.xml",
-        "source": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\fragment_modificar_categoria.xml"
+        "merged": "com.example.proyecto.app-mergeDebugResources-43:/layout/activity_crear_tarea.xml",
+        "source": "com.example.proyecto.app-main-46:/layout/activity_crear_tarea.xml"
     },
     {
-        "merged": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\nav_header_main.xml",
-        "source": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\nav_header_main.xml"
+        "merged": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\fragment_modificar_categoria.xml",
+        "source": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\fragment_modificar_categoria.xml"
     },
     {
-        "merged": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\activity_main.xml",
-        "source": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\activity_main.xml"
+        "merged": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\nav_header_main.xml",
+        "source": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\nav_header_main.xml"
     },
     {
-        "merged": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\item_categoria.xml",
-        "source": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\item_categoria.xml"
+        "merged": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\fragment_gallery.xml",
+        "source": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\fragment_gallery.xml"
     },
     {
-        "merged": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\fragment_home.xml",
-        "source": "C:\\Users\\mromeroh1701\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\fragment_home.xml"
+        "merged": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\fragment_home.xml",
+        "source": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\fragment_home.xml"
+    },
+    {
+        "merged": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\item_categoria.xml",
+        "source": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\item_categoria.xml"
+    },
+    {
+        "merged": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-mergeDebugResources-43:\\layout\\task_item.xml",
+        "source": "C:\\Users\\enri-\\.gradle\\daemon\\8.2\\com.example.proyecto.app-main-46:\\layout\\task_item.xml"
     }
 ]

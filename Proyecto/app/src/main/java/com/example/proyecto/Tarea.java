@@ -4,7 +4,9 @@ import java.util.ArrayList;
 import java.util.Date;
 
 public class Tarea {
+
     public static ArrayList<Tarea> tareaArrayList = new ArrayList<>();
+
     public static String TAREA_EDIT_EXTRA = "tareaEdit";
 
     private int id;
@@ -50,6 +52,20 @@ public class Tarea {
                 nonDeleted.add(tarea);
         }
         return nonDeleted;
+    }
+
+    public static Tarea getNoteForID(int passedNoteID)
+    {
+
+        for(Tarea task : tareaArrayList)
+        {
+            if (task.getId() == passedNoteID)
+            {
+                return task;
+
+            }
+        }
+        return null;
     }
 
     public int getId() {
