@@ -3231,8 +3231,11 @@ id bounce
 id bounceBoth
 id bounceEnd
 id bounceStart
+id buttonGuardar
 id buttonPanel
+id buttonSeleccionarContacto
 id cache_measures
+id calendarViewFecha
 id callMeasure
 id cancel_button
 id carryVelocity
@@ -3305,6 +3308,10 @@ id easeInOut
 id easeOut
 id east
 id edge
+id editTextCategoria
+id editTextDescripcion
+id editTextEstado
+id editTextNombreContacto
 id edit_query
 id elastic
 id embed
@@ -3366,6 +3373,7 @@ id jumpToEnd
 id jumpToStart
 id labeled
 id layout
+id layoutPrincipal
 id left
 id leftToRight
 id legacy
@@ -3501,6 +3509,10 @@ id pressed
 id progress_circular
 id progress_horizontal
 id radio
+id radioButton10Min
+id radioButton1Dia
+id radioButtonSin
+id radioGroupRecordatorio
 id ratio
 id rectangles
 id recycler_view_categorias
@@ -3590,6 +3602,7 @@ id tag_transition_group
 id tag_unhandled_key_event_manager
 id tag_unhandled_key_listeners
 id tag_window_insets_animation_callback
+id taskListView
 id text
 id text2
 id textEnd
@@ -3612,6 +3625,7 @@ id textinput_placeholder
 id textinput_prefix_text
 id textinput_suffix_text
 id time
+id timePickerHora
 id title
 id titleDividerNoCustom
 id title_template
@@ -3628,6 +3642,8 @@ id transition_position
 id transition_scene_layoutid_cache
 id transition_transform
 id triangle
+id tvName
+id tvSummary
 id unchecked
 id uniform
 id unlabeled
@@ -3766,6 +3782,7 @@ layout abc_search_dropdown_item_icons_2line
 layout abc_search_view
 layout abc_select_dialog_material
 layout abc_tooltip
+layout activity_crear_tarea
 layout activity_main
 layout app_bar_main
 layout content_main
@@ -3852,6 +3869,7 @@ layout select_dialog_item_material
 layout select_dialog_multichoice_material
 layout select_dialog_singlechoice_material
 layout support_simple_spinner_dropdown_item
+layout task_item
 menu activity_main_drawer
 menu main
 mipmap ic_launcher

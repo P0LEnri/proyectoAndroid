@@ -15,7 +15,7 @@
             android:id="@+id/editTextDescripcion"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="descripcion"
+            android:hint="Descripción"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -26,8 +26,22 @@
             android:id="@+id/editTextCategoria"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:hint="categoria"
+            android:hint="Categoría"
             app:layout_constraintTop_toBottomOf="@id/editTextDescripcion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            android:inputType="text"/>
+
+
+
+        <EditText
+            android:id="@+id/editTextEstado"
+            android:text="Pendiente"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Estado"
+            app:layout_constraintTop_toBottomOf="@id/editTextCategoria"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="8dp"
@@ -37,7 +51,7 @@
             android:id="@+id/calendarViewFecha"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            app:layout_constraintTop_toBottomOf="@id/editTextCategoria"
+            app:layout_constraintTop_toBottomOf="@id/editTextEstado"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="8dp"/>
@@ -66,27 +80,39 @@
                 android:id="@+id/radioButton10Min"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="diez_min_antes"/>
+                android:text="Diez minutos antes"/>
 
             <RadioButton
                 android:id="@+id/radioButton1Dia"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="un_dia_antes"/>
+                android:text="Un día antes"/>
 
             <RadioButton
                 android:id="@+id/radioButtonSin"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="sin_recordatorio"/>
+                android:text="Sin recordatorio"/>
         </RadioGroup>
+        <EditText
+            android:id="@+id/editTextNombreContacto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="Contacto"
+            android:focusable="false"
+            android:clickable="true"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupRecordatorio"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            android:inputType="text"/>
 
         <Button
             android:id="@+id/buttonSeleccionarContacto"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="seleccionar_contacto"
-            app:layout_constraintTop_toBottomOf="@id/radioGroupRecordatorio"
+            android:text="Seleccionar contacto"
+            app:layout_constraintTop_toBottomOf="@id/editTextNombreContacto"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="8dp"/>
@@ -95,7 +121,7 @@
             android:id="@+id/buttonGuardar"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:text="guardar"
+            android:text="Guardar"
             app:layout_constraintTop_toBottomOf="@id/buttonSeleccionarContacto"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
@@ -103,3 +129,4 @@
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
+
