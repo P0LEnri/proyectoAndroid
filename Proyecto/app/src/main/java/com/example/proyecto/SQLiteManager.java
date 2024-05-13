@@ -10,7 +10,9 @@ import android.database.sqlite.SQLiteOpenHelper;
 import java.text.DateFormat;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.ArrayList;
 import java.util.Date;
+import java.util.List;
 
 
 public class SQLiteManager extends SQLiteOpenHelper
@@ -83,6 +85,25 @@ public class SQLiteManager extends SQLiteOpenHelper
 
 
     }
+    public void addTarea(String nombreContacto, String descripcion, String hora, String fecha, String estado, String recordatorio, String categoria, int notificacion) {
+        SQLiteDatabase db = this.getWritableDatabase();
+
+        ContentValues values = new ContentValues();
+        values.put(COLUMN_NOMBRE_CONTACTO, nombreContacto);
+        values.put(COLUMN_DESCRIPCION, descripcion);
+        values.put(COLUMN_HORA, hora);
+        values.put(COLUMN_FECHA, fecha);
+        values.put(COLUMN_ESTADO, estado);
+        values.put(COLUMN_RECORDATORIO, recordatorio);
+        values.put(COLUMN_CATEGORIA, categoria);
+        values.put(COLUMN_NOTIFICACION, notificacion);
+
+        db.insert(TABLE_NAME, null, values);
+        db.close();
+    }
+
+
+
 
     @Override
     public void onUpgrade(SQLiteDatabase sqLiteDatabase, int oldVersion, int newVersion)

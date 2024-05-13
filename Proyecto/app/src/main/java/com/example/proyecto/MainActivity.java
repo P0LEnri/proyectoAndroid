@@ -1,5 +1,6 @@
 package com.example.proyecto;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.Menu;
@@ -8,6 +9,7 @@ import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
 import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 import androidx.navigation.ui.AppBarConfiguration;
 import androidx.navigation.ui.NavigationUI;
@@ -21,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -32,8 +35,31 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+                // Obtener el controlador de navegación y el destino actual
+                NavController navController = Navigation.findNavController(MainActivity.this, R.id.nav_host_fragment_content_main);
+                NavDestination destination = navController.getCurrentDestination();
+
+                if (destination != null) {
+                    int id = destination.getId();
+                    // Verificar el ID del destino y realizar diferentes acciones
+                    //int id = destination.getId();
+                    if (id == R.id.nav_home) {
+                        // Acción para Home
+                        Snackbar.make(view, "Acción en Home", Snackbar.LENGTH_LONG).show();
+                        // Crear un intent para iniciar la actividad CrearTarea
+                        Intent intent = new Intent(view.getContext(), CrearTarea.class);
+                        view.getContext().startActivity(intent);
+                    } else if (id == R.id.nav_gallery) {
+                        // Acción para Gallery
+                        Snackbar.make(view, "Acción en Gallery", Snackbar.LENGTH_LONG).show();
+                    } else if (id == R.id.nav_slideshow) {
+                        // Acción para Slideshow
+                        Snackbar.make(view, "Acción en Slideshow", Snackbar.LENGTH_LONG).show();
+                    } else {
+                        // Acción por defecto
+                        Snackbar.make(view, "a:"+id, Snackbar.LENGTH_LONG).show();
+                    }
+                }
             }
         });
         DrawerLayout drawer = binding.drawerLayout;

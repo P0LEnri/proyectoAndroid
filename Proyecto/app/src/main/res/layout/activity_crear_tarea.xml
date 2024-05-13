@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CrearTarea">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layoutPrincipal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:id="@+id/editTextDescripcion"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="descripcion"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="16dp"
+            android:inputType="text"/>
+
+        <EditText
+            android:id="@+id/editTextCategoria"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:hint="categoria"
+            app:layout_constraintTop_toBottomOf="@id/editTextDescripcion"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"
+            android:inputType="text"/>
+
+        <CalendarView
+            android:id="@+id/calendarViewFecha"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/editTextCategoria"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <TimePicker
+            android:id="@+id/timePickerHora"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:timePickerMode="spinner"
+            app:layout_constraintTop_toBottomOf="@id/calendarViewFecha"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <RadioGroup
+            android:id="@+id/radioGroupRecordatorio"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintTop_toBottomOf="@id/timePickerHora"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp">
+
+            <RadioButton
+                android:id="@+id/radioButton10Min"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="diez_min_antes"/>
+
+            <RadioButton
+                android:id="@+id/radioButton1Dia"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="un_dia_antes"/>
+
+            <RadioButton
+                android:id="@+id/radioButtonSin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="sin_recordatorio"/>
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/buttonSeleccionarContacto"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="seleccionar_contacto"
+            app:layout_constraintTop_toBottomOf="@id/radioGroupRecordatorio"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="8dp"/>
+
+        <Button
+            android:id="@+id/buttonGuardar"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="guardar"
+            app:layout_constraintTop_toBottomOf="@id/buttonSeleccionarContacto"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="16dp"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
